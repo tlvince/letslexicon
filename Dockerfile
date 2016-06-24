@@ -1,4 +1,4 @@
-FROM alpine:3.3
+FROM alpine:3.4
 MAINTAINER Tom Vincent <docker@tlvince.com>
 
 RUN apk add --no-cache \
@@ -9,8 +9,8 @@ RUN apk add --no-cache \
   # lexicon
   python py-pip
 
-RUN pip install dns-lexicon==1.0.24
-RUN git clone --branch v0.1.0 --depth 1 https://github.com/lukas2511/letsencrypt.sh.git
+RUN pip install dns-lexicon==1.1.6
+RUN git clone --branch v0.2.0 --depth 1 https://github.com/lukas2511/letsencrypt.sh.git
 
 WORKDIR letsencrypt.sh
 COPY . .

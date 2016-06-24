@@ -1,5 +1,5 @@
 #CA="https://acme-staging.api.letsencrypt.org/directory"
 CHALLENGETYPE="dns-01"
 HOOK="./lexicon-dns-hook.sh"
-PRIVATE_KEY="./key/private_key.pem"
-PRIVATE_KEY_JSON="./key/private_key.json"
+ACCOUNT_KEY="./key/private_key.pem"
+ACCOUNT_KEY_JSON="./key/private_key.json"
